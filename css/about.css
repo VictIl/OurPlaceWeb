@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a8a2acd7;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 3.8vw;
+    background-color: #88617681;
+}
+nav h3 {
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3vw;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;}
+  
+@keyframes reveal {
+    80%{
+    letter-spacing: 1.1vw;
+    }
+    100% {
+    background-size: 300% 300%;
+    }
+}
+@keyframes glow {
+    40% {
+    text-shadow: 0 0 1.16vw #fff;
+    }
+}
+nav h3:hover{
+    cursor: default;
+}
+
+nav h3{
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3vw;
+}
+#nav-links{
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family:  'Dosis', sans-serif;
+    position: relative;
+    font-size: 2vw;
+    display: flex;
+    margin-top: 0.4vw;
+    padding: 0;
+    justify-content: space-around;
+    width: 50%;
+    height:100%;
+}
+#nav-links li {
+    margin: 0;
+    list-style: none;
+}
+#nav-links li a {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.4vw;
+    font-weight: bold;
+    font-size: 1.867vw;
+    text-decoration: none;
+}
+#nav-links li a:hover{
+    animation:fade3 1.2s;
+    color: rgb(59, 36, 52);
+}
+@keyframes fade3 {
+    0%{
+        color: rgb(255, 255, 255);
+    };50%{  color: rgb(94, 68, 86);};
+    80%{  color: rgb(59, 36, 52);};
+}
+                                                                  /*dropdowns*/
+#nav-links li ul{
+    margin: 0.9vw 0vw 0vw -2%;
+    display: none;
+    line-height: 3.5vw;
+    text-align: center;
+  position: absolute;
+  background: linear-gradient(180deg, #706874 0%, rgba(73, 68, 67, 0.87) 100%);
+  border-radius: 0vw 0vw 0.267vw 0.267vw;
+}
+#nav-links li:nth-child(2) ul{
+    width: 7vw;
+    height:11.3vw;
+}
+#nav-links li:nth-child(3) ul{
+    width: 17.333vw;
+    height:11.92vw;
+margin-left: -2.2%;
+}
+#nav-links li:hover  ul{
+    display: block;
+}
+
+#nav-links li ul li a{
+    font-size: 1.1vw;
+    border-radius: 0vw 0vw 0.267vw 0.267vw;
+    padding: 0.8vw 8%;
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.107vw;
+    color:rgb(0, 0, 0);
+}
+#nav-links li:nth-child(3) ul li a{
+    padding: 0.8vw 24%;
+    margin-top: 0%;
+    line-height: 0.107vw;
+}
+#nav-links li ul li a:hover{
+    border-top:solid #fff 0.14vw;
+    border-bottom:solid #fff 0.14vw;
+    background-color: rgba(156, 156, 156, 0.205);
+    color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    #nav-links{
+        width: 74%;      
+    }
+}
+nav h3:hover{
+    cursor: default;
+}
+                                                         /**/
+                                                        /*chosen nav li*/
+#nav-links li:nth-child(4) .ch{
+    color: rgb(46, 29, 48);
+    animation: none;
+    padding: 0;
+    cursor: default;
+    text-align: center;
+    margin: 0;
+    border-bottom: solid rgb(46, 29, 48 ) 0.1vw;
+   
+}
+body{
+  background-color: lightgrey;
+}
+
+h2{
+    position: static;
+    font-family:  'Dosis', sans-serif;
+    font-size: 2.3vw;
+line-height: 2vw;
+letter-spacing: -0.02em;
+font-weight: lighter;
+    text-align: center;
+    margin: 2vw 0 2vw 0%;
+}
+
+                                                                        /*switch*/
+
+.change{
+    position: relative;
+    background-color: rgba(151, 132, 168, 0.651);
+    width: 46%;
+    border-radius: 0.4vw;
+    margin:3vw 0 0  7%;
+    height:25vw;
+    display: flex;
+    text-align: center;
+    
+}
+.change div:nth-child(1){
+    display: flex;
+    border-radius: 0.2vw;
+    width:100%;
+}
+.change div:nth-child(1) div:nth-child(1){
+    position: absolute;
+  background-color: rgb(255, 255, 255);
+  width:34%;
+  height: 70%;    
+  border-radius: 0.4vw;
+  box-shadow:2px 2px 9px 2px #1f0a1d34;
+  margin: 2vw;
+}
+.change div:nth-child(1) div:nth-child(1) img{
+    border-radius: 0.4vw;
+filter: grayscale(10%);
+  width:100%;
+  height:100%;
+}
+
+.change div:nth-child(1) div:nth-child(2){
+    position: absolute;
+    min-width:40%;
+    width: auto;
+    height: fit-content;
+    margin: 2vw 0 0 34%;
+  }
+.change h4{
+    color: #fff;
+    font-size: 4vw;
+    letter-spacing: 0.02em;
+    text-shadow: 0.5vw -0.4vw 0.6vw rgba(0, 0, 0, 0.74);
+    font-family: 'Marcellus SC', serif;
+width: fit-content;
+    height: fit-content;
+    margin: 2vw 0 0 -1.6vw;
+}
+.change h5{
+    color: #fff;
+    font-size: 2vw;
+    background-color: rgba(83, 50, 77, 0.322);
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+width: fit-content;
+    height: fit-content;
+    margin: 2vw 0 0 8vw;
+}
+.change p{
+    color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+width: fit-content;
+text-align: end;
+    height: fit-content;
+    margin: 2vw 1.6vw 0 1.8vw;
+}
+
+.change div:nth-child(2){
+    
+    position: absolute;
+    display: block;
+    width:4%;
+    margin: 0.4vw 0 0 93%;
+    height: auto;
+
+}
+.change div:nth-child(2) div:nth-child(2){
+    width: 60%;
+    margin: 0;
+    margin-top: 0.7vw;
+}
+.change div:nth-child(2) div{
+    position: relative;
+    border: solid rgb(213, 210, 214) 0.2vw;
+    width:60%;
+    height:1.2vw;
+    margin-top: 0.7vw;
+    border-radius: 50%;
+}
+.change div:nth-child(2) div:hover{                                     /* fix hover*/
+    cursor: pointer;
+    background-color: rgb(214, 210, 210);
+}
+                                                                        /**/
+
+nav+div+button+p+h2+div{
+    display: flex;
+}
+                                                                        /*side text*/
+.tex{
+    position: static;
+    width:36%;
+    text-align:justify;
+    height: 100%;
+    margin: 2.8vw 0 0 3vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.04em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+    line-height: 2.8vw;
+}
+                                                                        /*quotes*/
+
+nav+div+button+p+h2{
+    position: static;
+    font-size: 2.4vw;
+    letter-spacing: 0.04em;
+    margin-top: 3vw;
+    margin-left: 7%;
+    margin-bottom: 0;                                              /* ?*/
+    text-align: start;
+    font-family: 'Marcellus SC', serif;
+    color: rgb(0, 0, 0);
+}
+nav+div+button+p{
+    position: static;
+    text-align: center;
+    font-size: 1.8vw;
+    color: rgb(0, 0, 0);
+    padding-top: 0.4vw;
+    border-radius: 0.9vw;
+    margin: 2vw 5vw;
+    text-align: center;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+}
+                                                                           /**/
+
+
+
+.rain{
+position: relative;
+display: flex;
+margin-top: 4vw;
+width: 100%;
+padding-top: 2vw;
+height:27vw;
+}
+.rain div:nth-child(1){
+    width:46%;
+    margin-left: 9%;
+    position: relative;
+    text-align: justify;
+    font-size: 1.7vw;
+    margin-top: 1vw;
+    letter-spacing: -0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+    line-height: 2.8vw;
+}
+.rain div:nth-child(2){
+    
+    width:25%;
+    border-radius: 0.4vw;
+    margin-left: 9%;
+    position: relative;
+    text-align: center;
+}
+.rain div:nth-child(2) img{
+    width:100%;
+    border-radius: 0.4vw;
+    height: 27vw;
+}
+
+.rain div:nth-child(2) >div{
+    position: absolute;
+    width:100%;
+    margin: 0;
+    border-radius: 0.4vw;
+    background-color: rgb(255, 255, 255);
+    height: 100%; 
+    opacity: 0;
+    animation: sl 40s infinite;
+}
+@keyframes sl{
+    1%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+}
+
+.rain div:nth-child(2) div:nth-child(2){
+    animation-delay: 10s;
+    background-color: rgb(65, 61, 61);
+}
+.rain div:nth-child(2) div:nth-child(3){
+    animation-delay: 20s;
+}
+.rain div:nth-child(2) div:nth-child(4){
+    animation-delay: 30s;
+    background-color: rgb(65, 61, 61);
+}
+
+.recommend{
+    position: relative;
+    width:80%;
+    margin-top: 2vw;
+    text-align: center;
+    margin-left: 9%;
+}
+
+.recommend h5{
+    position: static;
+    font-size: 2.4vw;
+    letter-spacing: 0.04em;
+    margin-top: 5vw;
+    margin-bottom: 0;                                              /* ?*/
+    text-align: start;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+.recommend h5+p{
+    
+    text-align: center;
+    font-size: 1.8vw;
+    color: rgb(0, 0, 0);
+    padding-top: 0.4vw;
+    border-radius: 0.9vw;
+    margin:3vw 0;
+    text-align: start;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+}
+
+
+.recommend div .one{
+    margin-top: 2vw;
+    height: 12vw;
+    width:100%;
+    border-top: solid rgb(255, 255, 255) 0.2vw;
+    border-right: solid #fff 0.9vw;
+    animation: border1 10s infinite;
+    transition: ease-in-out;
+    display: flex;
+}
+@keyframes border1{
+    0%{
+        border-right: solid #fff 0.9vw;
+        border-top: solid rgb(255, 255, 255) 0.2vw;
+    } 
+    47%{
+        border-right: solid rgb(192, 188, 188) 0.9vw;
+        border-top: solid rgb(192, 188, 188) 0.2vw;
+    }
+    60%{
+        border-right: solid rgb(75, 74, 74) 0.9vw;
+        border-top: solid rgb(75, 74, 74) 0.2vw;
+    }
+    90%{
+        border-right: solid rgb(172, 167, 167) 0.9vw;
+        border-top: solid rgb(172, 167, 167) 0.2vw;
+    }
+}
+                                                                  /*pictures inside first rectangle*/
+.recommend div .one div:nth-child(1){
+    width:30%;
+}
+.recommend div .one div:nth-child(1) div:nth-child(1){
+    position: relative;
+    width:100%;
+    overflow: hidden;
+    height: 100%;
+}
+.recommend div .one div:nth-child(1) div:nth-child(1) >div{
+    position: absolute;
+    width:100%;
+    margin: 0;
+    border-radius: 0.4vw;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+  opacity: 0;
+    animation: sl5 40s infinite;
+  
+}
+@keyframes sl5{
+    1%{
+        opacity: 1;
+    }
+    24%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+}
+.recommend div .one div:nth-child(1) div:nth-child(1)  div:nth-child(1){
+    animation-delay: 0s;
+}
+.recommend div .one div:nth-child(1) div:nth-child(1)  div:nth-child(2){
+    animation-delay: 10s;
+}
+.recommend div .one div:nth-child(1) div:nth-child(1)  div:nth-child(3){
+    animation-delay: 20s;
+}
+.recommend div .one div:nth-child(1) div:nth-child(1)  div:nth-child(4){  
+    animation-delay: 30s;
+}
+
+.recommend div .one div:nth-child(1) div:nth-child(1) img{
+    width:100%;
+    border-radius: 0.4vw;
+    height: 12vw;
+}
+                                                               /*fade first pic*/
+.recommend div .one div:nth-child(1) div:nth-child(2){
+    position: absolute;
+    width: 30%;
+    margin-top:-12vw ;
+    height: 12vw;
+    text-align: center;
+    opacity: 0;
+    border-radius: 0.4vw;
+    transition: opacity .6s ease-in;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+.recommend div .one div:nth-child(1) div:nth-child(2) >p{
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0vw 1vw;
+    margin-top: 1.3vw;
+    font-size: 1.2vw;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+}
+.recommend div .one div:nth-child(1):hover .dt{
+opacity: 1;
+cursor: default;
+}
+
+
+                                                                              /**/
+
+
+
+                                                                            /*text inside first rectangle*/
+.recommend div .one div:nth-child(2){
+    width:70%;
+}
+.recommend div .one div:nth-child(2) h4{
+    letter-spacing: -0.05em;
+    font-family: 'Dosis', serif;
+    font-size: 1.8vw;
+    line-height: 2.7vw;
+    text-align: justify;
+    padding: 1vw 1vw 0 2vw;
+    font-weight: bold;
+}
+.recommend div .one div:nth-child(2) p{
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+    margin-right: 1vw;
+    text-align: end;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+                                                                             /**/
+.recommend div .two{
+    margin-top: 4.6vw;
+    border-top: solid rgb(255, 255, 255) 0.2vw;
+    border-left: solid #fff 0.9vw;
+    width:100%;
+    animation: border2 10s infinite;
+    transition: ease-in-out;
+    display: flex;
+    height: 12vw;
+}
+@keyframes border2{
+    0%{
+        border-left: solid #fff 0.9vw;
+        border-top: solid rgb(255, 255, 255) 0.2vw;
+    } 
+    47%{
+        border-left: solid rgb(192, 188, 188) 0.9vw;
+        border-top: solid rgb(192, 188, 188) 0.2vw;
+    }
+    60%{
+        border-left: solid rgb(75, 74, 74) 0.9vw;
+        border-top: solid rgb(75, 74, 74) 0.2vw;
+    }
+    90%{
+        border-left: solid rgb(172, 167, 167) 0.9vw;
+        border-top: solid rgb(172, 167, 167) 0.2vw;
+    }
+}
+.recommend div .two div:nth-child(1){
+    width:70%;
+}
+.recommend div .two div:nth-child(2){
+    width:30%;
+}
+.recommend div .two div:nth-child(2) div:nth-child(1){
+    position: relative;
+    width:100%;
+    overflow: hidden;
+    height: 100%;
+}
+.recommend div .two div:nth-child(2) div:nth-child(1) >div{
+    position: absolute;
+    width:100%;
+    margin: 0;
+    border-radius: 0.4vw;
+    background-color: rgb(255, 255, 255);
+    height: 100%; 
+    opacity: 0;
+    animation: sl 40s infinite;
+}
+
+.recommend div .two div:nth-child(2) div:nth-child(1)  div:nth-child(2){
+    animation-delay: 10s;
+}
+.recommend div .two div:nth-child(2) div:nth-child(1)  div:nth-child(3){
+        animation-delay: 20s;
+}
+.recommend div .two div:nth-child(2) div:nth-child(1)  div:nth-child(4){  
+      animation-delay: 30s;
+}
+
+.recommend div .two div:nth-child(2) div:nth-child(1) img{
+    width:100%;
+    border-radius: 0.4vw;
+    height: 12vw;
+}
+                                                                        /* fade second pic*/
+.recommend div .two div:nth-child(2) div:nth-child(2){    
+    position: absolute;
+    width: 30%;
+    margin-top:-12vw ;
+    height: 12vw;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .6s ease-in;
+    border-radius: 0.4vw;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+.recommend div .two div:nth-child(2) div:nth-child(2)>p{    
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0vw 1vw;
+    font-style: italic;
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+}
+.recommend div .two div:nth-child(2):hover .dt2{
+    opacity: 1;
+    cursor: default;
+}
+                                                                  /*text on second rectangle*/
+.recommend div .two div:nth-child(1) h4{
+    letter-spacing: -0.05em;
+    font-family: 'Dosis', serif;
+    font-size: 1.8vw;
+    line-height: 2.7vw;
+    text-align: justify;
+    padding: 1vw 1vw 0 2vw;
+    font-weight: bold;
+}
+.recommend div .two div:nth-child(1) p{
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+    margin-right: 1vw;
+    text-align: end;
+    font-size: 1.4vw;
+    font-style: italic;
+}
+.recommend+p{
+    margin: 3vw 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-size: 1.6vw;
+    line-height: 2.4vw;
+    font-weight: bold;
+    text-align: center;
+}
+                                                               /*animation 1*/
+.animation1{
+    position: relative;
+    margin-top: 8vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    width: 80%;
+}
+.animation1 div:nth-child(1){
+    background-color: bisque;
+    position: relative;
+    width:47%;
+    text-align: center;
+    background: rgba(223, 219, 219, 0.89);   
+    height:24vw;
+}
+.animation1 div:nth-child(1):before,
+.animation1 div:nth-child(1)::after
+{
+    content: '';
+    position: absolute;
+    top: -0.267vw;
+    left: -0.267vw;
+    border-radius: 0.3vw;
+     background: linear-gradient(45deg,#502e42,#ec9108,#992de0,#574c86);
+    width: calc(100% + 0.533vw);
+    background-size: 400%;
+    height: calc(100% + 0.533vw);
+    z-index: -1;
+    animation: ann 20s linear infinite;
+}
+.animation1 div:nth-child(1):after{
+    filter: blur(2.667vw);
+}
+@keyframes ann{
+    0%{
+      background-position:0 0;
+    }
+    50%{
+        background-position:300% 0;
+    }
+    100%{
+        background-position:0 0;
+    }
+}
+.animation1 div:nth-child(1) div{
+    position: relative;
+    width:76%;
+    padding: 0%;
+    margin: 0;
+    margin: 8% 12%;
+    height:18vw;
+}
+.animation1 div:nth-child(1) div{
+    position: relative;
+    width:76%;
+    padding: 0%;
+    margin: 0;
+    margin: 8% 12%;
+    height:18vw;
+}
+.animation1 div:nth-child(1) div div{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    animation: cute4 80s infinite;
+    opacity: 0;
+    margin: 0%;
+    height: 100%;
+}
+.animation1 div:nth-child(1) div div img{
+    width: 100%;
+    border-radius: 0.3vw;
+    height: 100%;
+}
+@keyframes cute4 {
+    2%{
+     opacity: 1;
+    }
+    12%{
+     opacity: 1;
+    }
+    12.5%{
+     opacity:0;
+    }
+}
+.animation1 div:nth-child(1) div div:nth-child(1){
+    animation-delay: 0s;
+}.animation1 div:nth-child(1) div div:nth-child(2){
+    animation-delay: 10s;}
+.animation1 div:nth-child(1) div div:nth-child(3){
+    animation-delay: 20s;}
+.animation1 div:nth-child(1) div div:nth-child(4){
+    animation-delay: 30s;}
+.animation1 div:nth-child(1) div div:nth-child(5){
+    animation-delay: 40s;}
+.animation1 div:nth-child(1) div div:nth-child(6){
+    animation-delay: 50s;}
+.animation1 div:nth-child(1) div div:nth-child(7){
+    animation-delay: 60s;}
+.animation1 div:nth-child(1) div div:nth-child(8){
+    animation-delay: 70s;}
+                                                                   /*text near animation*/
+.animation1 div:nth-child(2){
+    
+    margin-left: 10%;
+    width: 43%;
+    text-align: center;
+}
+.animation1 div:nth-child(2) h4{
+
+    font-size: 2.4vw;
+    letter-spacing: -0.02em;                                           /* ?*/
+    text-align: start;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+.animation1 div:nth-child(2) p{
+   
+    font-size: 1.8vw;
+    color: rgb(0, 0, 0);
+    padding-top: 1.4vw;
+    border-radius: 0.9vw;
+    margin-top:0.3vw;
+    text-align: justify;
+    line-height: 2vw;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+
+}
+
+                                                                   /*animation 2*/
+
+.animation2{
+    position: relative;
+    margin-top: 6vw;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    width: 80%;
+}
+.animation2 div:nth-child(2){
+    background-color: bisque;
+    position: relative;
+    width:40%;
+    margin-left: 13%;
+    text-align: center;
+    background: rgba(223, 219, 219, 0.89);   
+    height:33vw;
+}
+.animation2 div:nth-child(2):before,
+.animation2 div:nth-child(2)::after
+{
+    content: '';
+    position: absolute;
+    top: -0.267vw;
+    border-radius: 0.3vw;
+
+    left: -0.267vw;
+    background: linear-gradient(45deg,#416f7a,#cc6d2e,#000000,#a05acf,#ca24b4);
+
+    width: calc(100% + 0.533vw);
+    background-size: 400%;
+    height: calc(100% + 0.533vw);
+    z-index: -1;
+    animation: ann 20s linear infinite;
+}
+.animation2 div:nth-child(2):after{
+    filter: blur(2.667vw);
+}
+@keyframes ann{
+    0%{
+      background-position:0 0;
+    }
+    50%{
+        background-position:300% 0;
+    }
+    100%{
+        background-position:0 0;
+    }
+}
+                                                       /*slide second animation*/
+.animation2 div:nth-child(2) div{
+    position: relative;
+    width:74%;
+    padding: 0%;
+    margin: 0;
+    margin: 8% 13%;
+    height:28vw;
+}
+.animation2 div:nth-child(2) div div{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    animation: cute4 80s infinite;
+    opacity: 0;
+    margin: 0%;
+    height: 100%;
+}
+.animation2 div:nth-child(2) div div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3vw;
+}
+@keyframes cute4 {
+    2%{
+     opacity: 1;
+    }
+    12%{
+     opacity: 1;
+    }
+    12.5%{
+     opacity:0;
+    }
+}
+.animation2 div:nth-child(2) div div:nth-child(1){
+    animation-delay: 0s;
+}.animation2 div:nth-child(2)  div div:nth-child(2){
+    animation-delay: 10s;}
+.animation2 div:nth-child(2)  div div:nth-child(3){
+    animation-delay: 20s;}
+.animation2 div:nth-child(2)  div div:nth-child(4){
+    animation-delay: 30s;}
+.animation2 div:nth-child(2)  div div:nth-child(5){
+animation-delay: 40s;}
+.animation2 div:nth-child(2)  div div:nth-child(6){
+animation-delay: 50s;}
+.animation2 div:nth-child(2)  div div:nth-child(7){
+animation-delay: 60s;}
+.animation2 div:nth-child(2)  div div:nth-child(8){
+animation-delay: 70s;}
+                                                                   /*text near second animation*/
+.animation2 div:nth-child(1){
+    width: 47%;
+}
+.animation2 div:nth-child(1) h4{
+
+    font-size: 2.4vw;
+    letter-spacing: -0.02em;                                           /* ?*/
+    text-align: start;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+.animation2 div:nth-child(1) p{
+   
+    font-size: 1.8vw;
+    color: rgb(0, 0, 0);
+    padding-top: 1.4vw;
+    border-radius: 0.9vw;
+    margin-top:0.3vw;
+    text-align: justify;
+    line-height: 2.1vw;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', serif;
+    font-weight: bold;
+
+}
+
+.animation2+h3{
+    background: linear-gradient(180.42deg, rgba(94, 59, 95, 0.644)  1.49%, rgba(163, 129, 179, 0.541)  52.54%, rgba(255, 255, 255, 0) 84.37%);
+    width:100%;
+    height: fit-content;
+    position: relative;
+  margin-top: 6vw;
+    padding:2vw 0;
+    font-size: 2.5vw;
+    text-align: center;
+    letter-spacing: 0.0em;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    
+}
+.animation2+h3+p{
+    position: relative;
+    width:84%;
+    padding: 0.6vw 8%;
+    font-size: 1.8vw;
+    text-align: center;
+    line-height: 2.7vw;
+    letter-spacing: 0.04em;
+    font-family: 'Dosis', serif;
+   border-top:solid #fff 0.1vw;
+   border-bottom:solid #fff 0.1vw;
+   color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to right, #000000 0, rgb(255, 255, 255) 10%, #000000 20%);
+    background-position: 0;
+    background-clip:unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    animation: shine 3.2s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+}
+@keyframes shine{
+    0%{
+    background-position: 0;}
+    60%{
+    background-position: 40vw;}
+    100%{
+    background-position: 74vw;}
+}
+.close{
+    position: relative;
+    width:84%;
+    height:15vw;
+    display: flex;
+    margin: 3vw 0 0 8%;
+}
+.close div { 
+    position: relative;
+   width:19%;
+   margin-left: 2vw;
+   height:100%;
+}
+.close div:nth-child(1){
+    margin-left: 0;
+}
+.close div img
+{
+    
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.3vw;
+    width:100%;
+    height: 100%;
+    opacity:87%;
+}
+.close> div:hover img
+{
+ opacity:1;
+}
+#help{
+    position: fixed;
+    display:none;
+    width:80%;
+    margin: 1% 9% ;
+    z-index: 99;
+    height:82%;
+}
+#help a{
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+    top:0;
+    padding: 0.1vw 0.3vw;
+    margin:1vw 0.5vw 0 94%;
+ 
+}
+#help a:hover{
+    background-color: rgba(0, 0, 0, 0.308);
+}
+#help div{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+#help div img{
+    width:100%;
+    height:100%;
+    border-radius: 0.4vw;
+}
+#help p{
+    position: absolute;
+    top:40%;
+    width:100%;
+    padding:2vw 0;
+    font-size: 2.1vw;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+   border-top:solid #fff 0.2vw;
+   border-bottom:solid #fff 0.2vw;
+   background-color: rgba(0, 0, 0, 0.37);
+   text-transform: uppercase;
+   color: #fff;
+   transition: all .3s ease-in;
+    font-weight: bold;
+    
+}
+#help p:hover{
+    cursor:default;
+    letter-spacing: 0.4em;
+    box-shadow: inset -0.7vw -1vw 4vw -0.3vw rgba(255, 255, 255, 0.342);
+}
+@media screen and (max-width: 600px){
+    #help{
+        top:64%;
+       height: 30vw;      
+    }
+    .animation2+h3{
+        display: none;
+    }
+    .animation2+h3+p{
+        color: black;
+        border: none;
+        margin-top:5vw;
+        font-size: 2.4vw;
+        font-family: 'Marcellus SC', serif;
+        font-weight: lighter;
+    }
+}
+
+
+
+
+.close+p{
+    position: relative;
+    background: linear-gradient(360.18deg, rgba(161, 117, 176, 0.425) 2.51%, rgba(104, 69, 101, 0) 99.83%);    
+    width:80%;
+    margin-top: 2vw;
+    padding:0 10%;
+    padding-bottom: 3vw;
+    font-size: 1.6vw;
+    text-align: center;
+    line-height: 2.6vw;
+    letter-spacing: 0.04em;
+    font-family: 'Dosis', serif;
+   color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.close+p+div{
+    position: relative;
+    margin-left: 36%;
+    font-family: 'Dosis', serif;
+    font-size: 1.7vw;
+    color: rgb(0, 0, 0);
+     font-weight: bold;
+    padding-top: 2.4vw;
+   padding-bottom: 0;
+   
+}
+.close+p+div a{
+ margin: 0 3vw;
+   
+}
+
+                                                                /*footer*/
+
+footer{
+    position: relative;
+    background: rgba(94, 59, 95, 0.644);
+    margin-top: 3.2vw;
+    padding: 1.2vw 0 0.8vw 0;
+    text-align: center;
+}
+footer p{
+    position: relative;
+    font-family:  'Dosis', sans-serif;
+   font-size:1.4vw;
+   cursor:default;
+}
+footer h3{
+    position: relative;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size:1.8vw; background: linear-gradient(to right, #000000 0, rgb(255, 255, 255) 10%, #000000 15%);
+    background-position: 0;
+    background-clip:unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shiner 3.8s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;   cursor:default;
+    white-space: nowrap;
+}
+@keyframes shiner{
+    0%{
+    background-position: 0;}
+    60%{
+    background-position: 20vw;}
+    100%{
+    background-position: 50vw;}
+}
+footer h3+p{
+    position: relative;
+    padding:0.2vw 4.7vw 1.2vw 4.7vw;
+    color: rgb(236, 233, 233);cursor:default;
+    line-height: 1.1vw;
+    letter-spacing: 0.05em;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+}
+                                                   /*animation footer*/
+#finally {
+    color: rgb(39, 39, 39);
+  cursor:default;
+  text-transform: uppercase;
+  font-size:1.1vw;
+  text-align: center;
+  font-weight:bold;
+margin-top: 0.2vw;
+  position:static;
+  width:100%;
+  letter-spacing: 0.04em;
+  font-family: 'Marcellus SC', serif;
+
+  display:block;
+}
+
+#swtch {
+  height:2.7vw;
+  font-size:1.6vw;
+  letter-spacing: 0.1em;
+
+  font-weight: lighter;
+  overflow:hidden;
+}
+
+#swtch > div > div {
+  color:#fff;
+  padding:0.23vw 2.8vw;
+  height:2vw;
+  margin-bottom:2vw;
+  border-radius: 0.2vw;
+
+  display:inline-block;
+
+}
+
+#swtch div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#swtch div div {
+
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+}
+#swtch div:first-child div {
+    background:#f0966c;
+    color: #fff;
+}
+#swtch div:last-child div {
+  background:#000000;
+  color: #fff;
+
+}
+
+@keyframes show {
+    0% {margin-top:-12vw;}
+    5% {margin-top:-8vw;}
+    33% {margin-top:-8vw;}
+    38% {margin-top:-4vw;}
+    66% {margin-top:-4vw;}
+    71% {margin-top:0vw;}
+    99.99% {margin-top:0vw;}
+    100% {margin-top:-12vw;}
+  }
+
+
+footer .add{
+    position: relative;
+    display: flex;
+    margin-top: 1.3vw;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;   cursor:default;
+    left: 44.7%;
+    width: fit-content;
+    font-size: 1vw;
+}
+footer .add img{
+    align-self: center;
+    width:0.8vw;
+}
+#top{
+    position: fixed;
+    bottom:4%;
+    display: none;
+    z-index: 99;
+    right: 3%;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    border-radius: 1vw;
+    font-family: 'Marcellus SC', serif; 
+    margin-top: 1vw;
+    font-size: 1.6vw;
+    letter-spacing: 0.06em;
+    background-color: #706874;
+    box-shadow: 0.2vw 0.2vw 3vw #fff;
+    padding: 0.3vw 1.2vw;
+    border: none;
+    transition: .3s ease-in;
+}
+#top:hover{
+    letter-spacing: 0.04em;
+    background-color: rgb(33, 8, 43);
+    color: #fff;
+  
+}

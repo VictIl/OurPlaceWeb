@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 3.8vw;
+    background-color: #88617681;
+}
+nav h3 {
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3vw;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;}
+  
+@keyframes reveal {
+    80%{
+    letter-spacing: 1.1vw;
+    }
+    100% {
+    background-size: 300% 300%;
+    }
+}
+@keyframes glow {
+    40% {
+    text-shadow: 0 0 1.16vw #fff;
+    }
+}
+nav h3:hover{
+    cursor: default;
+}
+#nav-links{
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family:  'Dosis', sans-serif;
+    position: relative;
+    font-size: 2vw;
+    display: flex;
+    margin-top: 0.4vw;
+    padding: 0;
+    justify-content: space-around;
+    width: 50%;
+    height:100%;
+}
+#nav-links li {
+    margin: 0;
+    list-style: none;
+}
+#nav-links li a {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.4vw;
+    font-weight: bold;
+    font-size: 1.867vw;
+    text-decoration: none;
+}
+#nav-links li a:hover{
+    animation:fade3 1.2s;
+    color: rgb(59, 36, 52);
+}
+@keyframes fade3 {
+    0%{
+        color: rgb(255, 255, 255);
+    };50%{  color: rgb(94, 68, 86);};
+    80%{  color: rgb(59, 36, 52);};
+}
+                                                                  /*dropdowns*/
+#nav-links li ul{
+    margin: 0.9vw 0vw 0vw -2%;
+    display: none;
+    line-height: 3.5vw;
+    text-align: center;
+    z-index: 99;
+  position: absolute;
+  background: linear-gradient(180deg, #5e5464 0%, rgb(63, 59, 58) 100%);
+  border-radius: 0vw 0vw 0.267vw 0.267vw;
+}
+#nav-links li:nth-child(2) ul{
+    width: 7vw;
+    height:11.3vw;
+}
+#nav-links li:nth-child(3) ul{
+    width: 17.333vw;
+    height:11.92vw;
+margin-left: -2.2%;
+}
+#nav-links li:hover  ul{
+    display: block;
+}
+
+#nav-links li ul li a{
+    font-size: 1.1vw;
+    border-radius: 0vw 0vw 0.267vw 0.267vw;
+    padding: 0.8vw 8%;
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.107vw;
+    color:rgb(0, 0, 0);
+}
+#nav-links li:nth-child(3) ul li a{
+    padding: 0.8vw 24%;
+    margin-top: 0%;
+    line-height: 0.107vw;
+}
+#nav-links li ul li a:hover{
+    border-top:solid #fff 0.14vw;
+    border-bottom:solid #fff 0.14vw;
+    background-color: rgba(156, 156, 156, 0.205);
+    color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    #nav-links{
+        width: 74%;      
+    }
+}
+nav h3:hover{
+    cursor: default;
+}
+                                                         /**/
+                                                        /*chosen nav li*/
+#nav-links li:nth-child(2) .ch{
+    color: rgb(46, 29, 48);
+    animation: none;
+    padding: 0;
+    cursor: default;
+    text-align: center;
+    margin: 0;
+    border-bottom: solid rgb(46, 29, 48 ) 0.1vw;
+   
+}
+body{
+    background-color: rgba(184, 173, 194, 0.651);
+    overscroll-behavior-y: none;
+}
+
+
+h2{
+    position: static;
+    font-family:  'Dosis', sans-serif;cursor:default;
+    font-size: 2.3vw;
+line-height: 2vw;
+letter-spacing: -0.02em;
+font-weight: lighter;
+    text-align: center;
+    margin: 2vw 0 2vw 0%;
+}
+/*                                                                                     h1           */
+h1{
+    letter-spacing: 0.06em;
+    font-size: 3vw;
+    text-align: center;cursor:default;
+    margin-bottom: 2vw;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+}
+/*                                                                                  scroll     */
+
+section{
+    width: 98%;
+    height: 25.2vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+section::-webkit-scrollbar{
+    display: none;
+}
+section .product{
+    min-width: 34%;
+    height: 23vw;
+    background: whitesmoke;
+    margin:  0 1.5vw  0 0;
+    border-radius: 1.4vw;
+    position: relative;
+    left: 0;
+    box-shadow:  0.8vw 0.8vw 0.8vw rgba(28, 22, 39, 0.767) ;
+    transition: 0.5s;
+
+}
+section .product div:nth-child(1){
+    width: 100%;
+    height: 100%;
+    border-radius: 1.4vw;
+    display: flex;
+    overflow: hidden;
+}
+section .product div:nth-child(1) img{
+    width: 100%;
+}
+.product h4{
+    position: absolute;
+    top:0;
+  margin-top:  1vw ;
+    padding: 0 73% 0vw 4vw;
+    border-bottom: solid #fff 1px ;
+    border-top: solid #fff 1px ;
+    background-color: rgba(240, 255, 255, 0.185);
+    font-size: 2.4vw;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+}
+
+.button{
+    width: 100%;/*90*/
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    top: 0;
+    margin: auto;
+    margin-top: 44%;
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0  1.4vw 1.4vw;
+    height: 40%;
+}
+
+
+.product a{
+    position: absolute;
+    margin: 0;
+    margin-top:-2.5% ;
+    margin-left: 14.2%;
+    text-decoration: none;
+    padding: 0.5vw 1.5vw;
+    font-size: 1.2vw;
+ border-radius: 1.6vw;
+    background: #ae67ffd5;
+    font-family:  'Dosis', sans-serif;
+    letter-spacing: -0.04em;
+    font-size: 1.48vw;
+    font-weight: bold;
+    color: white;
+}
+.product a:hover{
+    background: none;
+    border: solid #ae67ffd5 0.4px;
+    color:#5c1fa1d5;
+}
+.button p{
+    margin:0;
+    margin-top: 1vw;
+    width: 90%;
+    font-family:  'Dosis', sans-serif;
+    margin-left: 1.7% ;
+    font-weight: bold;
+    text-align: start;
+    line-height: 1.8vw;
+    letter-spacing: -0.04em;
+    font-size: 1.72vw;
+    color: #000000;
+}
+.product:nth-child(2) h4{
+    padding: 0 71% 0vw 4vw;
+}
+.product:nth-child(3) h4{
+    padding: 0 47% 0vw 4vw;
+}
+.product:nth-child(4) h4{
+    padding: 0 68% 0vw 4vw;
+}
+.product:nth-child(5) h4{
+    padding: 0 58% 0vw 4vw;
+}
+.product:nth-child(6) h4{
+    padding: 0 64% 0vw 4vw;
+}
+.product:nth-child(5) a{
+    margin-top: 2%;
+}
+.product:nth-child(6) a{
+    margin-top: 2%;
+}
+
+section+p{
+
+    position: relative;
+    padding: 2.4vw;
+    text-align: center;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size:1.7vw;
+    letter-spacing: 0.02em;
+}
+section+p+p{
+
+    position: relative;
+    width:auto;
+    margin: 0 3.5%;
+    padding-bottom:2vw;
+    text-align: center;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    line-height: 3.8vw;
+    font-size:2vw;
+    letter-spacing: -0.02em;
+}
+
+
+
+
+
+
+                                                        /*picturs*/
+
+
+
+
+
+.threepics div{
+    position: relative;
+    margin: 2vw 0;
+    display: flex;
+    justify-content: center;
+}
+                                                               /* 1*/
+.threepics div div:nth-child(1){
+    position: relative;
+    width:26.8vw;
+    height: 16.4vw;
+  margin-right: 3vw;  
+  border-radius: 0.4vw;
+}
+.threepics div div:nth-child(1) img{
+    width:100%;    border-radius: 0.4vw;
+
+
+}
+.threepics div div:nth-child(1) div{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.534);margin: 0%;
+    transition: all .7s ease;
+    opacity: 1;
+    border-radius: 0.4vw;
+width: 100%;
+
+}
+.threepics div div:nth-child(1) div{
+    top:0;
+    left:0;
+    height: 100%;
+}
+.threepics div div:nth-child(1):hover  div{
+    width:0;
+    opacity: 0;
+    cursor: pointer;
+}
+.threepics div div:nth-child(1) div p{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 1.8vw;
+    opacity: 100;
+    width:15vw;
+    padding: 0 2vw;
+    font-family: 'Marcellus SC', serif; 
+    font-weight: lighter;
+    border-radius: 0.4vw;
+    border-top: solid #fff 0.18vw;
+    border-bottom: solid #fff 0.18vw;
+    top:17%; 
+    text-align: center;
+      
+}
+.threepics div div:nth-child(1):hover  div p{
+    opacity: 0;font-size: 0vw;  width: 0;
+}
+
+                                                               /* 2*/
+.threepics div div:nth-child(2){
+    position: relative;
+    width:26.8vw;
+    height: 16.4vw;
+    border-radius: 0.4vw;
+
+  margin-right: 3vw;  
+}
+.threepics div div:nth-child(2) img{
+    width:100%;  border-radius: 0.4vw;
+
+}
+.threepics div div:nth-child(2) div{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.664);margin: 0%;
+    transition: all .7s ease;
+    opacity: 1;
+     border-radius: 0.4vw;
+
+}
+.threepics div div:nth-child(2) div{
+ height: 100%;
+    width: 100%;
+}
+.threepics div div:nth-child(2):hover  div{
+    opacity: 0;
+    cursor: pointer;
+}
+.threepics div div:nth-child(2) div p{
+    font-size: 1.8vw;
+    opacity: 100;
+    color: #fff;
+    width:17vw;
+    position: absolute;  
+    top:44%; 
+    font-family: "Dosis";
+    font-weight: bold;
+    text-align: center;
+    transition: all .7s ease;
+}
+.threepics div div:nth-child(2):hover  div p{
+    opacity: 0;    font-size: 0vw;  width: 0;
+}
+.threepics div div:nth-child(2) div h4{
+    color: rgb(255, 255, 255);
+    margin-top:10%;
+    letter-spacing: 0.04em;
+    font-family: 'Marcellus SC', serif; 
+    font-weight: lighter;
+    border-radius: 0.4vw;
+    border: solid #fff 0.18vw;
+    font-size: 2.3vw;
+    width: 18vw;
+    height:2.8vw; 
+    transition: all .7s ease;
+    text-align: center;
+}
+.threepics div div:nth-child(2):hover div h4{  
+border: none;
+    width: 0;
+    font-size: 0;
+    
+}
+                                                               /* 3*/
+.threepics div div:nth-child(3){
+    width:26.8vw;  
+    border-radius: 0.4vw;
+    height: 16.4vw;
+}
+.threepics div div:nth-child(3) img{
+    width:100%;  
+    border-radius: 0.4vw;
+
+}
+.threepics div div:nth-child(3) div{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.466);margin: 0%;
+    transition: all .7s ease;
+    opacity: 1;  
+    border-radius: 0.4vw;
+    width:100%;
+}
+.threepics div div:nth-child(3) div{
+    top:0;
+    right:0;
+    height: 100%;
+}
+.threepics div div:nth-child(3):hover  div{
+    width:0;
+    opacity: 0;
+    cursor: pointer;
+}
+.threepics div div:nth-child(3) div p{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 1.8vw;
+    opacity: 100;
+    width:15vw;
+    padding: 0 2vw;
+    font-family: 'Marcellus SC', serif; 
+    font-weight: lighter;
+    border-radius: 0.4vw;
+    border-top: solid #fff 0.18vw;
+    border-bottom: solid #fff 0.18vw;
+    top:17%; 
+    text-align: center;
+      
+}
+.threepics div div:nth-child(3):hover  div p{
+    opacity: 0;font-size: 0vw;  width: 0;
+    padding:none;
+    border:none;
+}
+                                                                   /**/                                                  
+.threepics+p{
+    position: relative;
+    position: relative;
+    padding: 2.4vw;
+    padding-top: 0;
+    text-align: center;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size:1.5vw;
+    letter-spacing: 0.02em;
+}
+                                                                /*footer*/
+
+footer{
+    position: relative;
+    background: rgba(94, 59, 95, 0.644);
+    margin-top: 3.2vw;
+    padding: 1.2vw 0 0.8vw 0;
+    text-align: center;
+}
+footer p{
+    position: relative;
+    font-family:  'Dosis', sans-serif;
+   font-size:1.4vw;
+   cursor:default;
+}
+footer h3{
+    position: relative;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size:1.8vw; background: linear-gradient(to right, #000000 0, rgb(255, 255, 255) 10%, #000000 15%);
+    background-position: 0;
+    background-clip:unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shiner 3.8s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;cursor:default;
+    white-space: nowrap;
+}
+@keyframes shiner{
+    0%{
+    background-position: 0;}
+    60%{
+    background-position: 20vw;}
+    100%{
+    background-position: 50vw;}
+}
+footer h3+p{
+    position: relative;
+    padding:0.2vw 4.7vw 1.2vw 4.7vw;
+    color: rgb(236, 233, 233);
+    line-height: 1.1vw;
+    letter-spacing: 0.05em;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+}
+                                                   /*animation footer*/
+#finally {
+    color: rgb(39, 39, 39);
+  cursor:default;
+  text-transform: uppercase;
+  font-size:1.1vw;
+  text-align: center;
+  font-weight:bold;
+margin-top: 0.2vw;
+  position:static;
+  width:100%;
+  letter-spacing: 0.04em;
+  font-family: 'Marcellus SC', serif;
+
+  display:block;
+}
+
+#swtch {
+  height:2.7vw;
+  font-size:1.6vw;
+  letter-spacing: 0.1em;
+
+  font-weight: lighter;
+  overflow:hidden;
+}
+
+#swtch > div > div {
+  color:#fff;
+  padding:0.23vw 2.8vw;
+  height:2vw;
+  margin-bottom:2vw;
+  border-radius: 0.2vw;
+
+  display:inline-block;
+
+}
+
+#swtch div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#swtch div div {
+
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+}
+#swtch div:first-child div {
+    background:#f0966c;
+    color: #fff;
+}
+#swtch div:last-child div {
+  background:#000000;
+  color: #fff;
+
+}
+
+@keyframes show {
+    0% {margin-top:-12vw;}
+    5% {margin-top:-8vw;}
+    33% {margin-top:-8vw;}
+    38% {margin-top:-4vw;}
+    66% {margin-top:-4vw;}
+    71% {margin-top:0vw;}
+    99.99% {margin-top:0vw;}
+    100% {margin-top:-12vw;}
+  }
+
+
+footer .add{
+    position: relative;
+    display: flex;
+    margin-top: 1.3vw;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    left: 44.7%;
+    width: fit-content;cursor:default;
+    font-size: 1vw;
+}
+footer .add img{
+    align-self: center;
+    width:0.8vw;
+}
+
+section .product:nth-child(3) h4{
+    padding-right: 46.4%;
+}
+section .product:nth-child(1) h4,section .product:nth-child(5) h4,section .product:nth-child(6) h4{
+  background-color: rgba(0, 0, 0, 0.226);
+}

@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #a8a2acd7;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 3.8vw;
+    background-color: #8861768f;
+}
+nav h3 {
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size: 3vw;
+    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, rgba(255, 255, 255, 0.582), transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+}
+  
+@keyframes reveal {
+    80%{
+    letter-spacing: 1.1vw;
+    }
+    100% {
+    background-size: 300% 300%;
+    }
+}
+@keyframes glow {
+    40% {
+    text-shadow: 0 0 1.16vw #fff;
+    }
+}
+nav h3:hover{
+    cursor: default;
+}
+#nav-links{
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-family:  'Dosis', sans-serif;
+    position: relative;
+    font-size: 2vw;
+    display: flex;
+    margin-top: 0.4vw;
+    padding: 0;
+    justify-content: space-around;
+    width: 50%;
+    height:100%;
+}
+#nav-links li {
+    margin: 0;
+    list-style: none;
+}
+#nav-links li a {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.4vw;
+    font-weight: bold;
+    font-size: 1.867vw;
+    text-decoration: none;
+}
+#nav-links li a:hover{
+    animation:fade3 1.2s;
+    color: rgb(59, 36, 52);
+}
+@keyframes fade3 {
+    0%{
+        color: rgb(255, 255, 255);
+    };50%{  color: rgb(94, 68, 86);};
+    80%{  color: rgb(59, 36, 52);};
+}
+                                                                  /*dropdowns*/
+#nav-links li ul{
+    margin: 0.9vw 0vw 0vw -2%;
+    display: none;
+    line-height: 3.5vw;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    background: linear-gradient(180deg, #7d7980 0%, rgb(94, 68, 86) 100%);
+    border-radius: 0vw 0vw 0.267vw 0.267vw;
+}
+#nav-links li:nth-child(2) ul{
+    width: 7vw;
+    height:11.3vw;
+}
+#nav-links li:nth-child(3) ul{
+    width: 17.333vw;
+    height:11.92vw;
+    margin-left: -2.2%;
+}
+#nav-links li:hover  ul{
+    display: block;
+}
+
+#nav-links li ul li a{
+    font-size: 1.1vw;
+    border-radius: 0vw 0vw 0.267vw 0.267vw;
+    padding: 0.8vw 8%;
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+    line-height: 0.107vw;
+    color:rgb(0, 0, 0);
+}
+#nav-links li:nth-child(3) ul li a{
+    padding: 0.8vw 24%;
+    margin-top: 0%;
+    line-height: 0.107vw;
+}
+#nav-links li ul li a:hover{
+    border-top:solid #fff 0.14vw;
+    border-bottom:solid #fff 0.14vw;
+    background-color: rgba(156, 156, 156, 0.205);
+    color: #fff;
+}
+
+
+
+                                                         /**/
+                                                        /*chosen nav li*/
+#nav-links li:nth-child(3) .ch{
+    color: rgb(46, 29, 48);
+    animation: none;
+    padding: 0;
+    cursor: default;
+    text-align: center;
+    margin: 0;
+    border-bottom: solid rgb(46, 29, 48 ) 0.1vw; 
+}
+#nav-links ul li .pick{
+    color: rgb(40, 25, 46);
+}
+#nav-links ul li .pick:hover{
+    color: rgb(40, 25, 46);
+    border:none;
+    background: none;
+    animation: none;
+}
+@media screen and (max-width: 600px){
+    #nav-links{
+        width: 74%;      
+    }
+}
+                                        /*form*/
+body{
+    background: #64556685;
+}
+form{
+    width:78%;
+    position: static;
+    margin:4vw 0 0 11%;
+    border-radius: 0.4vw;
+    background: linear-gradient(321.69deg, rgba(178, 111, 184, 0.39) -32.59%, rgba(213, 176, 216, 0.547996) -32.58%, rgba(230, 227, 227, 0.774) 94.94%);
+
+}
+
+form div{
+    background-color:none;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    margin: 3.8vw 0 0 10%;
+}
+form div span {
+    color: rgb(62, 13, 68);
+    font-family: 'Dosis', sans-serif;
+    font-size: 2vw;
+    letter-spacing: -0.02em;
+    
+}
+div  label{   position: relative;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: bold;   
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    border-top: solid black 0.1vw;
+    border-bottom: solid black 0.14vw;
+    border-radius: 0.2vw;
+}
+
+
+#button{
+    margin: 0vw 0 0 75%;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    border-radius: 0.9vw;
+    letter-spacing: 0.02em;
+    font-size: 1.8vw;
+    color:rgb(83, 76, 76);
+    padding: 0.2vw 0.5vw;
+    transition: all .3s ease-in;
+}
+#button:hover{
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    background: rgb(83, 76, 76);
+    color: white;
+    cursor: pointer;
+}
+#button1{
+    position: relative;
+    margin: 0;
+    margin-left: 27vw;
+    font-family: 'Marcellus SC', serif;
+    font-weight: lighter;
+    background-color: rgb(83, 76, 76);
+    letter-spacing: 0.03em;
+    color:  rgb(255, 255, 255);
+    padding: 0.3vw 0.5vw;
+    font-size: 2.1vw;
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    border-radius: 0.9vw;
+    transition: all .4s ease-in;
+}
+#button1:hover{
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    background: rgb(255, 255, 255);
+    color: rgb(83, 76, 76);
+    cursor: pointer;
+}
+                                          /*drop down*/
+.drop{
+    position: absolute;
+    margin-top: -1.4vw;
+    font-size: 1.8vw;
+    letter-spacing: 0.02em;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 42%;
+    transform: translate(-50%,-50%);
+}
+
+.drop select{
+
+    background-color: rgb(83, 76, 76);
+    color: rgb(255, 255, 255);
+    height: 2.8vw;
+    border: none;
+    border-radius: 0.2vw;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.7vw;
+    justify-content: center;
+    align-self: center;
+    width:auto;
+    outline-color: rgba(0, 0, 0, 0);
+}
+.drop select:hover{
+    cursor: pointer;
+}
+
+.drop:before{
+    content: "";
+    margin-top: 0;
+    width:80%;
+    margin-left: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+                                                  /**/
+
+#timeError{
+    position: absolute;
+    margin-left: 16vw;
+}
+
+#un,#loc,#time,#email{
+    font-family: 'Dosis', sans-serif;
+    width: auto;
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    border-radius: 0.2vw;
+    text-align: end;
+    font-size: 1.8vw;
+    margin-left: 1vw;
+    height: 2.38vw;
+}
+                                                                /*check*/
+#check{
+    position: absolute;
+    margin-left:65%;
+    -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 0.133vw solid #cacece;
+	box-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 1vw;
+	border-radius: 0.4vw;
+	display: inline-block;
+    margin-top: -2.133vw ;
+}
+#check:active, #check:checked:active {
+	box-shadow: 0 0.133vw 0.267vw rgba(0, 0, 0, 0.521), inset 0px 1px 3px rgba(71, 59, 70, 0.1);
+}
+
+#check:checked {
+	background-color: rgb(83, 76, 76);
+	border: 0.1vw solid rgb(83, 76, 76);
+    box-shadow: 0 0.133vw 0.267vw rgba(0,0,0,0.05), inset 0vw -2vw 1.333vw -1.6vw rgba(0,0,0,0.05), inset 2vw 1.333vw -1.6vw rgba(255,255,255,0.1);
+    color: #fff;
+}
+#check:checked:after {
+	content: '\2714';
+	font-size: 1.6vw;
+	position: absolute;
+	top: 0;
+	left: 0.5vw;
+	color: #fff;
+}
+#check:hover{
+  cursor: pointer;
+}
+                                                                /**/
+
+#appear{
+    display: none;
+    margin-top:4.267vw;
+    background: none;
+}
+#appear input{
+    font-family: 'Dosis', sans-serif;
+    width: auto;
+    border: solid  rgb(83, 76, 76) 0.2vw;
+    border-radius: 0.2vw;
+    text-align: end;
+    font-size: 1.8vw;
+    height: 2.38vw;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+#ph{
+    margin-left: 1vw;
+}
+
+#appear div{
+    position: relative;
+    margin:0;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  
+}
+#appear div:nth-child(1){
+    border-top: solid black 0.1vw;
+    border-bottom: solid black 0.14vw;
+    border-radius: 0.2vw;
+
+}
+                                                 /*radios*/
+#appear #notify1,#appear #notify2{
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: .2s ease-out;
+    background-color: #fafafa;
+	border: 0.2vw solid rgb(83, 76, 76);
+	padding:  0.9vw;
+	border-radius: 50%;
+}
+#appear #notify1:hover,#appear #notify2:hover{
+    background:rgb(83, 76, 76);}
+#appear #notify1:checked,#appear #notify2:checked{
+    background:rgb(83, 76, 76);
+    box-shadow: 0 0.133vw 0.267vw rgba(0,0,0,0.05), inset 0vw -2vw 1.333vw -1.6vw rgba(0,0,0,0.05), inset 2vw 1.333vw -1.6vw rgba(255,255,255,0.1), inset 0vw 0vw 1.333vw rgba(0,0,0,0.1);
+}
+#appear #notify1:active,#appear #notify2:active{
+    box-shadow: 0 0.133vw 0.267vw rgba(0, 0, 0, 0.39), inset 0vw 0.133vw 0.4vw rgba(54, 53, 53, 0.514);
+}
+
+/*text near radios*/
+#notify1 +div,#notify2 +div{
+   border: none;
+   letter-spacing: 0;
+margin: -4.4vw 0 0 3vw;
+}
+                                                /**/
+#appear2 { 
+    position: absolute;
+    display: none;
+    font-size: 1.8vw;
+padding-bottom: 0;
+  padding-top: 2vw;
+  margin: 0;
+    
+}
+.tr{
+    margin: 0;
+    width: 80%;
+    padding: 3vw 10% 1vw 10%;
+    text-align: center;
+   letter-spacing: 0.02em;
+   background: linear-gradient(180deg, rgba(178, 116, 184, 0.43) 0%, rgba(255, 255, 255, 0) 100%);
+   font-family: 'Marcellus SC', serif;
+   font-weight: lighter;
+  
+}
+form{
+    padding-bottom: 3vw;
+}
+
+                                                        /**/
+form+div{
+     background: linear-gradient(321.69deg, rgba(127, 90, 131, 0.39) -32.59%, rgba(213, 176, 216, 0.547996) -32.58%, rgba(224, 221, 221, 0.863) 94.94%);
+    margin-top: 2.6vw;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(231, 228, 228, 0.733) 18.15%, rgba(241, 224, 242, 0.171) 61.01%);
+}
+
+form+div .slider{
+  width:76%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    height: 24vw;
+    
+}
+form+div .slider .item{
+    width: 100%;
+    height: 100%;
+}
+form+div .slider .item img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0.4vw;
+    height: 100%;
+}
+
+form+div .slider #left,form+div .slider #right {
+    
+    cursor: pointer;
+    position: absolute;
+    top: 39%;
+    left: 0;
+    width:3vw;
+    margin-left: 2vw;
+    padding: 1.6vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    border-radius: 0.8vw 0.4vw 0.4vw 0.8vw;
+}
+form+div .slider #right {
+    margin-right: 1.6vw;
+    right: 0;
+    margin-left: 88%;
+    border-radius: 0.4vw 0.8vw 0.8vw 0.4vw;
+}
+
+form+div .slider #left:hover,form+div .slider #right:hover {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+form+div h5{
+    position: relative;
+    letter-spacing: 0.02em;
+    font-size: 3vw;
+    padding: 1.4vw 0 1.5vw 0;
+    border-bottom: solid black 0.15vw;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Marcellus SC', serif;
+}
+form+div p{
+   
+    position: relative;
+    width: 76%;
+  padding: 2vw 12%;
+
+  padding-bottom: 7vw;
+    font-family: "Dosis",sans-serif;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+}
+form+div p:nth-child(1){
+    position: relative;
+    width: 80%;
+  padding: 2vw 0;
+    margin-left: 10%;
+    font-family: "Dosis",sans-serif;
+    font-size: 1.8vw;
+    line-height: 2.3vw;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+                                                       /**/
+                                                                /*footer*/
+
+footer{
+    position: relative;
+    background: rgba(94, 59, 95, 0.644);
+    margin-top: 3.2vw;
+    padding: 1.2vw 0 0.8vw 0;
+    text-align: center;
+}
+footer p{
+    position: relative;
+    font-family:  'Dosis', sans-serif;
+   font-size:1.4vw;
+}
+footer h3{
+    position: relative;
+    letter-spacing: -0.02em;
+    font-family: 'Marcellus SC', serif;
+    font-size:1.8vw; background: linear-gradient(to right, #000000 0, rgb(255, 255, 255) 10%, #000000 15%);
+    background-position: 0;
+    background-clip:unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shiner 3.8s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+}
+@keyframes shiner{
+    0%{
+    background-position: 0;}
+    60%{
+    background-position: 20vw;}
+    100%{
+    background-position: 50vw;}
+}
+footer h3+p{
+    position: relative;
+    padding:0.2vw 4.7vw 1.2vw 4.7vw;
+    color: rgb(236, 233, 233);
+    line-height: 1.1vw;
+    letter-spacing: 0.05em;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.2vw;
+    text-align: center;
+}
+                                                   /*animation footer*/
+#finally {
+    color: rgb(39, 39, 39);
+  cursor:default;
+  text-transform: uppercase;
+  font-size:1.1vw;
+  text-align: center;
+  font-weight:bold;
+margin-top: 0.2vw;
+  position:static;
+  width:100%;
+  letter-spacing: 0.04em;
+  font-family: 'Marcellus SC', serif;
+
+  display:block;
+}
+
+#swtch {
+  height:2.7vw;
+  font-size:1.6vw;
+  letter-spacing: 0.1em;
+
+  font-weight: lighter;
+  overflow:hidden;
+}
+
+#swtch > div > div {
+  color:#fff;
+  padding:0.23vw 2.8vw;
+  height:2vw;
+  margin-bottom:2vw;
+  border-radius: 0.2vw;
+
+  display:inline-block;
+
+}
+
+#swtch div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#swtch div div {
+
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+}
+#swtch div:first-child div {
+    background:#f0966c;
+    color: #fff;
+}
+#swtch div:last-child div {
+  background:#000000;
+  color: #fff;
+
+}
+
+@keyframes show {
+    0% {margin-top:-12vw;}
+    5% {margin-top:-8vw;}
+    33% {margin-top:-8vw;}
+    38% {margin-top:-4vw;}
+    66% {margin-top:-4vw;}
+    71% {margin-top:0vw;}
+    99.99% {margin-top:0vw;}
+    100% {margin-top:-12vw;}
+  }
+
+
+footer .add{
+    position: relative;
+    display: flex;
+    margin-top: 1.3vw;
+    font-family:  'Dosis', sans-serif;
+    font-weight: bold;
+    left: 44.7%;
+    width: fit-content;
+    font-size: 1vw;
+}
+footer .add img{
+    align-self: center;
+    width:0.8vw;
+}
